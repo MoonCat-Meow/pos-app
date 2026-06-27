@@ -26,22 +26,6 @@
     </div>
 </div>
 
-<div class="mb-3">
-    <label>Kategori</label>
 
-    <select name="category_id" class="form-control" required>
-        <option value="">-- Pilih Kategori --</option>
-
-        @forelse($categories as $cat)
-            <option value="{{ $cat->id }}">
-                {{ $cat->name }}
-            </option>
-        @empty
-            <option value="">
-                Belum ada kategori
-            </option>
-        @endforelse
-    </select>
-</div>
 
 @endsection
